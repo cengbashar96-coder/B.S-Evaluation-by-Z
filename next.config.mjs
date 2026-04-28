@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  /* تم إزالة output: 'export' للسماح بالـ API Routes */
   images: {
-    unoptimized: true, // ضروري جداً ليعمل الموقع على Cloudflare Pages بدون مشاكل
+    unoptimized: true,
   },
 };
 
