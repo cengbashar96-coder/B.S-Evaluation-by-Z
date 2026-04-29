@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+export const runtime = 'edge';
 
 // هذا الكود هو المسؤول عن جلب "قائمة" كل المشاريع الهندسية المسجلة
 export async function GET() {
