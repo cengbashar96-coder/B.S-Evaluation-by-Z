@@ -119,54 +119,33 @@
     @apply bg-background text-foreground;
   }
 
-  /* RTL/LTR Text Alignment */
-  html[dir="rtl"] {
-    .text-align-start {
-      text-align: right !important;
-    }
-    .text-align-end {
-      text-align: left !important;
-    }
-    .text-align-content {
-      text-align: right !important;
-    }
-  }
-
-  html[dir="ltr"] {
-    .text-align-start {
-      text-align: left !important;
-    }
-    .text-align-end {
-      text-align: right !important;
-    }
-    .text-align-content {
-      text-align: left !important;
-    }
-  }
-
-  /* Form labels and inputs */
-  html[dir="rtl"] label {
-    text-align: right !important;
-  }
-
-  html[dir="ltr"] label {
-    text-align: left !important;
-  }
-
-  /* Card headers and section titles */
+  /* RTL/LTR Logic */
+  html[dir="rtl"] .text-align-start,
+  html[dir="rtl"] .text-align-content,
+  html[dir="rtl"] label,
   html[dir="rtl"] .card-header h3,
   html[dir="rtl"] .section-title,
   html[dir="rtl"] .field-group-label {
     text-align: right !important;
   }
 
+  html[dir="ltr"] .text-align-start,
+  html[dir="ltr"] .text-align-content,
+  html[dir="ltr"] label,
   html[dir="ltr"] .card-header h3,
   html[dir="ltr"] .section-title,
   html[dir="ltr"] .field-group-label {
     text-align: left !important;
   }
 
-  /* Form inputs */
+  html[dir="rtl"] .text-align-end {
+    text-align: left !important;
+  }
+
+  html[dir="ltr"] .text-align-end {
+    text-align: right !important;
+  }
+
   html[dir="rtl"] input,
   html[dir="rtl"] textarea,
   html[dir="rtl"] select {
