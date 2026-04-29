@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+export const runtime = 'edge';
 
 // هذا المحرك البرمجي يستهدف مشروعاً واحداً فقط بناءً على الـ ID
 export async function GET(
