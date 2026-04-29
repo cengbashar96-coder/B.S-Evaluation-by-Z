@@ -2,7 +2,6 @@ import { NextResponse, NextRequest } from 'next/server';
 
 export const runtime = 'edge';
 
-// جلب قائمة المشاريع الهندسية
 export async function GET() {
   const mockProjects = [
     { id: '1', name: 'مشروع بناء سكني - طابق أول', date: '2026-04-27' },
@@ -17,7 +16,6 @@ export async function GET() {
   });
 }
 
-// إضافة مشروع جديد
 export async function POST(request: NextRequest) {
   try {
     const data = await request.json();
